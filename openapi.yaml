@@ -1,0 +1,27 @@
+openapi: '3.1.0'
+info:
+  title: 'Test API'
+  version: '0.0.0'
+servers:
+  - url: 'https://test.com'
+paths:
+  /api/test:
+    get:
+      tags:
+        - 'Test'
+      operationId: 'listTest'
+      summary: 'List test'
+      responses:
+        '200':
+          description: 'Retrieves product list'
+          content:
+            application/json:
+              schema: {
+                type: 'object',
+                content:
+                  test: {
+                    schema: {
+                      type: 'string'
+                    }
+                  }
+              }

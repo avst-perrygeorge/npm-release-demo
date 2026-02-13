@@ -1,0 +1,11 @@
+{
+  "name": "sdk",
+  "version": "v1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "echo 'Build complete'"
+  },
+  "author": "",
+  "license": "ISC"
+}
