@@ -1,3 +1,10 @@
+# [1.0.0-beta.14](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2026-02-13)
+
+
+### Bug Fixes
+
+* updated publish step ([067fa1c](https://github.com/avst-perrygeorge/npm-release-demo/commit/067fa1c487b7188276bd1057d2966a9e945b1261))
+
 # [1.0.0-beta.13](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2026-02-13)
 
 
