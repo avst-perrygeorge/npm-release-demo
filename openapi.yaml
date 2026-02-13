@@ -10,7 +10,7 @@ paths:
       tags:
         - 'Test'
       operationId: 'listTest'
-      summary: 'List test update 8'
+      summary: 'List test update 9'
       responses:
         '200':
           description: 'Retrieves product list'
