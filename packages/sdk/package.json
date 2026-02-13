@@ -1,6 +1,6 @@
 {
   "name": "@avst-perry/test-sdk",
-  "version": "v1",
+  "version": "1.0.0-beta.6",
   "description": "",
   "main": "main.js",
   "scripts": {
