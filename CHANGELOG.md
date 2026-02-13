@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2026-02-13)
+
+
+### Bug Fixes
+
+* check if change to file has happened since last tag ([9d1a957](https://github.com/avst-perrygeorge/npm-release-demo/commit/9d1a95703f824fecf74d60e6d5e867efabda297c))
+
 # [1.0.0-beta.2](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2026-02-13)
 
 
