@@ -82,7 +82,7 @@ jobs:
 
       - name: Publish SDK
         working-directory: packages/sdk
-        run: npm publish --access public
+        run: npm publish --access public --tag beta
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
