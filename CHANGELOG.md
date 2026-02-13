@@ -1,3 +1,10 @@
+# [1.0.0-beta.16](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2026-02-13)
+
+
+### Bug Fixes
+
+* removed npm token ([7562dd3](https://github.com/avst-perrygeorge/npm-release-demo/commit/7562dd391ca6defc93761b7c8bd7aaf815830086))
+
 # [1.0.0-beta.15](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2026-02-13)
 
 
