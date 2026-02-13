@@ -1,3 +1,10 @@
+# [1.0.0-beta.12](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2026-02-13)
+
+
+### Bug Fixes
+
+* check npm version ([f2ec916](https://github.com/avst-perrygeorge/npm-release-demo/commit/f2ec916eb6601f607fc0595b5e6dcbce912c132e))
+
 # [1.0.0-beta.11](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2026-02-13)
 
 
