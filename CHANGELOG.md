@@ -1,3 +1,10 @@
+# [1.0.0-beta.10](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2026-02-13)
+
+
+### Bug Fixes
+
+* trusted publishers ([429d277](https://github.com/avst-perrygeorge/npm-release-demo/commit/429d2778b6df9a1e903c1e75c16b81473e0dd98b))
+
 # [1.0.0-beta.9](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2026-02-13)
 
 
