@@ -1,3 +1,10 @@
+# [1.0.0-beta.7](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2026-02-13)
+
+
+### Bug Fixes
+
+* unrelated openapi change ([2e5bc24](https://github.com/avst-perrygeorge/npm-release-demo/commit/2e5bc243d3ea5f24c97100fd5fe7f6aeba8da235))
+
 # [1.0.0-beta.6](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2026-02-13)
 
 
