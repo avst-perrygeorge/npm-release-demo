@@ -75,6 +75,7 @@ jobs:
         run: |
           npm --version
           node --version
+          npm install -g npm@11.5.1
 
       - name: Update SDK version
         run: node scripts/sync-package-version.ts ${{ needs.release.outputs.version }}
