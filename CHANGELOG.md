@@ -1,3 +1,10 @@
+# [1.0.0-beta.15](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2026-02-13)
+
+
+### Bug Fixes
+
+* add repo url in sdk package json ([2806660](https://github.com/avst-perrygeorge/npm-release-demo/commit/28066602126e9a7a5b695261e8c879494eaf3a8e))
+
 # [1.0.0-beta.14](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2026-02-13)
 
 
