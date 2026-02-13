@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  id-token: write
+
 jobs:
   release:
     name: Release
@@ -74,8 +77,8 @@ jobs:
       - name: Publish SDK
         working-directory: packages/sdk
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # env:
+          # NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit SDK version
         run: |
