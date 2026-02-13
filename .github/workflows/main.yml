@@ -42,7 +42,11 @@ jobs:
       - name: Check for OpenAPI changes
         id: check
         run: |
-          if git diff ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} --name-only | grep -q "openapi.yaml"; then
+          LAST_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
+          if [ -z "$LAST_TAG" ]; then
+            echo "No previous tag — treating as first release"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff "$LAST_TAG" HEAD --name-only | grep -q "openapi.yaml"; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
