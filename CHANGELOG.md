@@ -1,3 +1,11 @@
+# [1.0.0-beta.8](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2026-02-13)
+
+
+### Bug Fixes
+
+* unrelated change ([7943819](https://github.com/avst-perrygeorge/npm-release-demo/commit/7943819134e73dcadb1d0c878c3521aa26772719))
+* updated main.yml ([3b00e41](https://github.com/avst-perrygeorge/npm-release-demo/commit/3b00e4111afde59dd8d24a8088f991e728b6f4a5))
+
 # [1.0.0-beta.7](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2026-02-13)
 
 
