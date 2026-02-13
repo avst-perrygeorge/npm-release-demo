@@ -4,10 +4,6 @@ on:
   push:
     branches: [main]
 
-permissions:
-  id-token: write
-  contents: write
-
 jobs:
   release:
     name: Release
@@ -61,6 +57,9 @@ jobs:
     needs: [release, check_openapi_changes]
     if: needs.check_openapi_changes.outputs.changed == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
