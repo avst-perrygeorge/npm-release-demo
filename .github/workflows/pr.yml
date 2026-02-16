@@ -5,13 +5,15 @@ on:
     branches: [main]
 
 jobs:
-  generate_openapi:
-    name: Generate OpenAPI spec
+  gen:
+    name: Gen
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.release.outputs.version }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          fetch-depth: 0
           token: ${{ secrets.GH_TOKEN }}
 
       - uses: actions/setup-node@v4
@@ -21,14 +23,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate OpenAPI spec
-        run: node scripts/generate-openapi-spec.ts
-
-      - name: Commit OpenAPI spec if changed
+      - name: Generate and compare OpenAPI spec
+        id: check
+        env:
+          NODE_ENV: production
         run: |
-          git diff --quiet openapi.yaml && exit 0
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add openapi.yaml
-          git commit -m "chore: update openapi.yaml [skip ci]"
-          git push
+          node scripts/generate-openapi-spec.ts
+          if ! diff -q openapi.yaml /tmp/openapi.yaml > /dev/null 2>&1; then
+          echo "OpenAPI spec has changed"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+          echo "OpenAPI spec unchanged"
+          fi
+
