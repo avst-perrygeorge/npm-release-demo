@@ -45,10 +45,7 @@ jobs:
         id: check
         run: |
           if git diff HEAD~1 --name-only | grep -q "openapi.yaml"; then
-            echo "OpenAPI spec has changed"
             echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "OpenAPI spec unchanged"
           fi
 
   publish_sdk:
