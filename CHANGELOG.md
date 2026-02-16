@@ -1,3 +1,10 @@
+# [1.0.0-beta.17](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.16...v1.0.0-beta.17) (2026-02-16)
+
+
+### Bug Fixes
+
+* pr flow ([3f8cc68](https://github.com/avst-perrygeorge/npm-release-demo/commit/3f8cc686d4dc52c382ae22edc9b496aaa44fa401))
+
 # [1.0.0-beta.16](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2026-02-13)
 
 
