@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  release:
-    name: Release
+  gen:
+    name: Gen
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.release.outputs.version }}
@@ -23,71 +23,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Release
-        id: release
-        run: npx semantic-release
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-  check_openapi_changes:
-    name: Check OpenAPI changes
-    needs: [release]
-    if: needs.release.outputs.version != ''
-    runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.check.outputs.changed }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Check for OpenAPI changes
+      - name: Generate and compare OpenAPI spec
         id: check
+        env:
+          NODE_ENV: production
         run: |
-          LAST_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
-          if [ -z "$LAST_TAG" ]; then
-            echo "No previous tag — treating as first release"
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          elif git diff "$LAST_TAG" HEAD --name-only | grep -q "openapi.yaml"; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+          node scripts/generate-openapi-spec.ts
+          if ! diff -q openapi.yaml /tmp/openapi.yaml > /dev/null 2>&1; then
+          echo "OpenAPI spec has changed"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+          echo "OpenAPI spec unchanged"
           fi
-
-  publish_sdk:
-    name: Publish SDK
-    needs: [release, check_openapi_changes]
-    if: needs.check_openapi_changes.outputs.changed == 'true'
-    runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          token: ${{ secrets.GH_TOKEN }}
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Check npm version
-        run: |
-          npm --version
-          node --version
-          npm install -g npm@11.5.1
-
-      - name: Update SDK version
-        run: node scripts/sync-package-version.ts ${{ needs.release.outputs.version }}
-
-      - name: Publish SDK
-        working-directory: packages/sdk
-        run: npm publish --access public --tag beta
-
-      - name: Commit SDK version
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add packages/sdk/package.json
-          git commit -m "chore: release SDK ${{ needs.release.outputs.version }} [skip ci]"
-          git push
