@@ -22,7 +22,7 @@
     "@semantic-release/github"
   ],
   "branches": [
-    "production",
+    "main",
     { "name": "main", "prerelease": "beta" }
   ]
 }
