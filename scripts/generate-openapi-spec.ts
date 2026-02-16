@@ -11,7 +11,5 @@ const content = fs.readFileSync(openapiPath, 'utf8');
 const randomChar = String.fromCharCode(97 + Math.floor(Math.random() * 26));
 const updated = content.replace(/^(\s+title:\s*')(.+)(')/m, `$1$2${randomChar}$3`);
 
-if (process.env.NODE_ENV === 'production') {
-  fs.writeFileSync('/tmp/openapi.yaml', updated);
-}
+fs.writeFileSync('/tmp/openapi.yaml', updated);
 console.log(`Appended '${randomChar}' to info.title`);
