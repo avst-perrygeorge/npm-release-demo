@@ -44,12 +44,11 @@ jobs:
       - name: Check for OpenAPI changes
         id: check
         run: |
-          LAST_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
-          if [ -z "$LAST_TAG" ]; then
-            echo "No previous tag — treating as first release"
+          if git diff HEAD~1 --name-only | grep -q "openapi.yaml"; then
+            echo "OpenAPI spec has changed"
             echo "changed=true" >> "$GITHUB_OUTPUT"
-          elif git diff "$LAST_TAG" HEAD --name-only | grep -q "openapi.yaml"; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "OpenAPI spec unchanged"
           fi
 
   publish_sdk:
@@ -83,6 +82,8 @@ jobs:
       - name: Publish SDK
         working-directory: packages/sdk
         run: npm publish --access public --tag beta
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Commit SDK version
         run: |
