@@ -1,3 +1,10 @@
+## [1.0.1-beta.2](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.1...v1.0.1-beta.2) (2026-02-26)
+
+
+### Bug Fixes
+
+* updated workflow to install npm 11 ([37310e5](https://github.com/avst-perrygeorge/npm-release-demo/commit/37310e54e8f58eaa76196ab4179e6ba54347420b))
+
 ## [1.0.1-beta.1](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0...v1.0.1-beta.1) (2026-02-26)
 
 
