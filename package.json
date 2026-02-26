@@ -8,6 +8,7 @@
     "lint": "eslint"
   },
   "repository": {
+    "type": "git",
     "url:": "https://github.com/avst-perrygeorge/npm-release-demo"
   },
   "dependencies": {
