@@ -1,3 +1,10 @@
+## [1.0.1-beta.5](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.4...v1.0.1-beta.5) (2026-02-26)
+
+
+### Bug Fixes
+
+* removed trailing space in package.json ([f9b7ec3](https://github.com/avst-perrygeorge/npm-release-demo/commit/f9b7ec301f88f9d429a165680797fa01eafacf6a))
+
 ## [1.0.1-beta.4](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.3...v1.0.1-beta.4) (2026-02-26)
 
 
