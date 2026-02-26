@@ -1,3 +1,10 @@
+## [1.0.1-beta.4](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.3...v1.0.1-beta.4) (2026-02-26)
+
+
+### Bug Fixes
+
+* added repository.url to package.json ([af276c3](https://github.com/avst-perrygeorge/npm-release-demo/commit/af276c3ba7c9587f14f4fb353465e0d914efe4cd))
+
 ## [1.0.1-beta.3](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.2...v1.0.1-beta.3) (2026-02-26)
 
 
