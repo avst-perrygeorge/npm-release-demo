@@ -1,3 +1,10 @@
+## [1.0.1-beta.6](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.5...v1.0.1-beta.6) (2026-02-26)
+
+
+### Bug Fixes
+
+* added type to repository ([95816af](https://github.com/avst-perrygeorge/npm-release-demo/commit/95816af00991f1dd6eae273914acc2ff6857da10))
+
 ## [1.0.1-beta.5](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.4...v1.0.1-beta.5) (2026-02-26)
 
 
