@@ -1,3 +1,13 @@
+## [1.0.1-beta.1](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0...v1.0.1-beta.1) (2026-02-26)
+
+
+### Bug Fixes
+
+* extra permission added to release step ([b2ee740](https://github.com/avst-perrygeorge/npm-release-demo/commit/b2ee7409cc530c31f57fa10689a13f8844a8e1c0))
+* update to workflow ([0b2d550](https://github.com/avst-perrygeorge/npm-release-demo/commit/0b2d550298fc751e1b17359f869c0c32f4a6bb7b))
+* updated semantic release npm plugin config ([ae64934](https://github.com/avst-perrygeorge/npm-release-demo/commit/ae64934122e8035b03f340336d55d0e48aad8fa3))
+* updated token in env in workflow ([566f524](https://github.com/avst-perrygeorge/npm-release-demo/commit/566f52488b7f56d10dd04fd0b012899d9bc86af0))
+
 # 1.0.0 (2026-02-16)
 
 
