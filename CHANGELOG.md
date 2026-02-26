@@ -1,3 +1,10 @@
+## [1.0.1-beta.9](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.8...v1.0.1-beta.9) (2026-02-26)
+
+
+### Bug Fixes
+
+* check npm version in workflow ([8c0dc8d](https://github.com/avst-perrygeorge/npm-release-demo/commit/8c0dc8db8f81278ad551bef1ac53d872b348f088))
+
 ## [1.0.1-beta.8](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.7...v1.0.1-beta.8) (2026-02-26)
 
 
