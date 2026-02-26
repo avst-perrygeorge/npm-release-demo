@@ -1,3 +1,11 @@
+## [1.0.1-beta.3](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.2...v1.0.1-beta.3) (2026-02-26)
+
+
+### Bug Fixes
+
+* updated package lock ([a47b564](https://github.com/avst-perrygeorge/npm-release-demo/commit/a47b564ecaac2322eece38dd84a0adf0342ec1aa))
+* updated version of semantic release npm ([b7c30d5](https://github.com/avst-perrygeorge/npm-release-demo/commit/b7c30d5345c2df115dcdc25027e51c8bbf7febff))
+
 ## [1.0.1-beta.2](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.1...v1.0.1-beta.2) (2026-02-26)
 
 
