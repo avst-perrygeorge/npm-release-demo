@@ -24,10 +24,15 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
 
-      - name: Upgrade npm
-        run: npm install -g npm@11.5.1
+      - name: Check npm version
+        run: |
+          npm -v
+          node -v
+
+      #- name: Upgrade npm
+      #  run: npm install -g npm@11.5.1
 
       - name: Install dependencies
         run: npm ci
