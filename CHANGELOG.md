@@ -1,3 +1,10 @@
+## [1.0.1-beta.8](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.7...v1.0.1-beta.8) (2026-02-26)
+
+
+### Bug Fixes
+
+* typo in packahe.json ([4395e56](https://github.com/avst-perrygeorge/npm-release-demo/commit/4395e561fd171d16864118563bbc571b2f2aa314))
+
 ## [1.0.1-beta.7](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.6...v1.0.1-beta.7) (2026-02-26)
 
 
