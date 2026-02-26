@@ -7,6 +7,9 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "repository": {
+    "url:" : "https://github.com/avst-perrygeorge/npm-release-demo"
+  },
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",
