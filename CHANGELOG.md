@@ -1,3 +1,11 @@
+## [1.0.1-beta.10](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.9...v1.0.1-beta.10) (2026-04-02)
+
+
+### Bug Fixes
+
+* commit message added to release.yml ([3df8177](https://github.com/avst-perrygeorge/npm-release-demo/commit/3df8177c4ba15b97efa9cc5bcdf6b2aaea228b90))
+* openapi updated ([59b1c75](https://github.com/avst-perrygeorge/npm-release-demo/commit/59b1c75923e8a78ea84f207d50b29c96c8b32b31))
+
 ## [1.0.1-beta.9](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.8...v1.0.1-beta.9) (2026-02-26)
 
 
