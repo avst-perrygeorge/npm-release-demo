@@ -2,6 +2,11 @@ name: Release SDK
 
 on:
   workflow_dispatch:
+    inputs:
+      commit_message:
+        description: 'Commit message from the triggering repository'
+        required: true
+        type: string
 
 jobs:
   release:
@@ -39,6 +44,12 @@ jobs:
         run: |
           echo "Generating SDK with Kiota from openapi.yaml"
           echo "Would run: npx kiota generate -l typescript -d openapi.yaml -o packages/sdk"
+
+      - name: Commit for semantic release
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "${{ inputs.commit_message }}"
 
       - name: Release
         id: release
