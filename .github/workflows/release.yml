@@ -1,8 +1,7 @@
 name: Release SDK
 
 on:
-  repository_dispatch:
-    types: [openapi_updated]
+  workflow_dispatch:
 
 jobs:
   release:
