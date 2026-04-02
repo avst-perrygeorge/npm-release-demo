@@ -1,8 +1,6 @@
 name: Release SDK
 
 on:
-  push:
-    branches: [main, beta]
   repository_dispatch:
     types: [openapi_updated]
 
