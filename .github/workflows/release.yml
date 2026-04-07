@@ -1,16 +1,13 @@
 name: Release SDK
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
-    inputs:
-      commit_message:
-        description: 'Commit message from the triggering repository'
-        required: true
-        type: string
 
 jobs:
   release:
-    name: Release
+    name: Release 1
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -46,10 +43,11 @@ jobs:
           echo "Would run: npx kiota generate -l typescript -d openapi.yaml -o packages/sdk"
 
       - name: Commit for semantic release
+        if: github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit --allow-empty -m "${{ inputs.commit_message }}"
+          git commit --allow-empty -m "fix: openapi spec updated"
 
       - name: Release
         id: release
