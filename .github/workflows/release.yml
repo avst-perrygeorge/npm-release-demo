@@ -1,0 +1,56 @@
+name: Release SDK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release 1
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      issues: write
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch OpenAPI spec
+        run: |
+          curl -L --fail \
+            -H "Accept: application/vnd.github.raw+json" \
+            -H "Authorization: Bearer ${{ secrets.SDK_REPO_PAT }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/avst-perrygeorge/npm-release-demo-app/contents/openapi.yaml \
+            -o openapi.yaml
+
+      - name: Generate SDK with Kiota
+        run: |
+          echo "Generating SDK with Kiota from openapi.yaml"
+          echo "Would run: npx kiota generate -l typescript -d openapi.yaml -o packages/sdk"
+
+      - name: Commit for semantic release
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "fix: openapi spec updated"
+
+      - name: Release
+        id: release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
