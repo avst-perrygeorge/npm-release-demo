@@ -1,12 +1,14 @@
 name: Release SDK
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches: [main]
   workflow_dispatch:
 
 jobs:
   release:
+    if: github.event.pull_request.merged == true || github.event_name =='workflow_dispatch'
     name: Release 1
     runs-on: ubuntu-latest
     permissions:
