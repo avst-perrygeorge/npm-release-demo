@@ -37,6 +37,9 @@ jobs:
             https://api.github.com/repos/avst-perrygeorge/npm-release-demo-app/contents/openapi.yaml \
             -o openapi.yaml
 
+      - name: List OpenAPI spec
+        run: ls -la openapi.yaml
+
       - name: Generate SDK with Kiota
         run: |
           echo "Generating SDK with Kiota from openapi.yaml"
