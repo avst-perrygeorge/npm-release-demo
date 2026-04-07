@@ -33,7 +33,7 @@ jobs:
 
       - name: Fetch OpenAPI spec
         run: |
-          curl -L \
+          curl -L --fail \
             -H "Accept: application/vnd.github.raw+json" \
             -H "Authorization: Bearer ${{ secrets.SDK_REPO_PAT }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
