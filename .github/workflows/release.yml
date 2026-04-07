@@ -9,7 +9,7 @@ on:
 jobs:
   release:
     if: github.event.pull_request.merged == true || github.event_name =='workflow_dispatch'
-    name: Release 1
+    name: Release
     runs-on: ubuntu-latest
     permissions:
       id-token: write
