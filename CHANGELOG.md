@@ -1,3 +1,26 @@
+## [1.0.1](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.0...v1.0.1) (2026-04-07)
+
+
+### Bug Fixes
+
+* added fail flag to curl request ([7cef1d7](https://github.com/avst-perrygeorge/npm-release-demo/commit/7cef1d74b509b061e5d205522327a2ed99a9fbaa))
+* added repository.url to package.json ([af276c3](https://github.com/avst-perrygeorge/npm-release-demo/commit/af276c3ba7c9587f14f4fb353465e0d914efe4cd))
+* added type to repository ([95816af](https://github.com/avst-perrygeorge/npm-release-demo/commit/95816af00991f1dd6eae273914acc2ff6857da10))
+* check npm version in workflow ([8c0dc8d](https://github.com/avst-perrygeorge/npm-release-demo/commit/8c0dc8db8f81278ad551bef1ac53d872b348f088))
+* commit message added to release.yml ([3df8177](https://github.com/avst-perrygeorge/npm-release-demo/commit/3df8177c4ba15b97efa9cc5bcdf6b2aaea228b90))
+* extra permission added to release step ([b2ee740](https://github.com/avst-perrygeorge/npm-release-demo/commit/b2ee7409cc530c31f57fa10689a13f8844a8e1c0))
+* openapi updated ([59b1c75](https://github.com/avst-perrygeorge/npm-release-demo/commit/59b1c75923e8a78ea84f207d50b29c96c8b32b31))
+* removed trailing space in package.json ([f9b7ec3](https://github.com/avst-perrygeorge/npm-release-demo/commit/f9b7ec301f88f9d429a165680797fa01eafacf6a))
+* typo in packahe.json ([4395e56](https://github.com/avst-perrygeorge/npm-release-demo/commit/4395e561fd171d16864118563bbc571b2f2aa314))
+* typo in packahe.json ([8a9af9a](https://github.com/avst-perrygeorge/npm-release-demo/commit/8a9af9a1ef1404ab5792c519bce9008ec02f4c52))
+* update to workflow ([0b2d550](https://github.com/avst-perrygeorge/npm-release-demo/commit/0b2d550298fc751e1b17359f869c0c32f4a6bb7b))
+* updated package lock ([a47b564](https://github.com/avst-perrygeorge/npm-release-demo/commit/a47b564ecaac2322eece38dd84a0adf0342ec1aa))
+* updated release.yml ([aed036e](https://github.com/avst-perrygeorge/npm-release-demo/commit/aed036e00add233b362c42365a390402fd74e65d))
+* updated semantic release npm plugin config ([ae64934](https://github.com/avst-perrygeorge/npm-release-demo/commit/ae64934122e8035b03f340336d55d0e48aad8fa3))
+* updated token in env in workflow ([566f524](https://github.com/avst-perrygeorge/npm-release-demo/commit/566f52488b7f56d10dd04fd0b012899d9bc86af0))
+* updated version of semantic release npm ([b7c30d5](https://github.com/avst-perrygeorge/npm-release-demo/commit/b7c30d5345c2df115dcdc25027e51c8bbf7febff))
+* updated workflow to install npm 11 ([37310e5](https://github.com/avst-perrygeorge/npm-release-demo/commit/37310e54e8f58eaa76196ab4179e6ba54347420b))
+
 ## [1.0.1-beta.10](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.1-beta.9...v1.0.1-beta.10) (2026-04-02)
 
 
