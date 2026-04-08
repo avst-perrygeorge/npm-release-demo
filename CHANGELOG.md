@@ -1,3 +1,11 @@
+## [1.0.8](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.7...v1.0.8) (2026-04-08)
+
+
+### Bug Fixes
+
+* openapi spec updated ([2c3ee59](https://github.com/avst-perrygeorge/npm-release-demo/commit/2c3ee59c15324b08866a1aba62d28fcba36dbf37))
+* unrelated change on main should not release ([9455d1a](https://github.com/avst-perrygeorge/npm-release-demo/commit/9455d1a5f178106393cdd9c3493f9276b3e97926))
+
 ## [1.0.7](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.6...v1.0.7) (2026-04-07)
 
 
