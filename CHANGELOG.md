@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.9...v1.1.0) (2026-04-08)
+
+
+### Bug Fixes
+
+* added carrot to dependency ([78608ff](https://github.com/avst-perrygeorge/npm-release-demo/commit/78608ff119abe28f24ec0c78d722f12fc2575e7e))
+
+
+### Features
+
+* added packahe ([#7](https://github.com/avst-perrygeorge/npm-release-demo/issues/7)) ([15be308](https://github.com/avst-perrygeorge/npm-release-demo/commit/15be3084818cbb9bf8369b1ca9319fae5a351291))
+* if removed from release ([#9](https://github.com/avst-perrygeorge/npm-release-demo/issues/9)) ([9ac88f8](https://github.com/avst-perrygeorge/npm-release-demo/commit/9ac88f8e9c6e757aec5c883a107891e878f6193a))
+* updated to release flow ([#8](https://github.com/avst-perrygeorge/npm-release-demo/issues/8)) ([34cd026](https://github.com/avst-perrygeorge/npm-release-demo/commit/34cd026474fb0a93720fcf053975066c1c65ec2a))
+
 ## [1.0.9](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.8...v1.0.9) (2026-04-08)
 
 
