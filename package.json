@@ -1,18 +1,12 @@
 {
   "name": "@avst-perry/test-sdk",
   "version": "1.0.9",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/avst-perrygeorge/npm-release-demo"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "7.1.0",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "13.1.4",
