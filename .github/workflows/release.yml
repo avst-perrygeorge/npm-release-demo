@@ -16,12 +16,19 @@ jobs:
     outputs:
       version: ${{ steps.release.outputs.version }}
     steps:
+      - name: Check values
+        run: |
+          echo "repo: ${{ github.repository }}"
+          echo "owner: ${{ github.repository_owner }}"
       - name: Generate token
         id: generate_token
         uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: |
+            ${{ github.repository }}
 
       - uses: actions/checkout@v4
         with:
