@@ -1,3 +1,17 @@
+## [1.1.1](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.0...v1.1.1) (2026-04-09)
+
+
+### Bug Fixes
+
+* check values ([#15](https://github.com/avst-perrygeorge/npm-release-demo/issues/15)) ([03d012b](https://github.com/avst-perrygeorge/npm-release-demo/commit/03d012b519db6372b2d1cbf9d4f0ef904021baa2))
+* generate token in release with create-github-app-token ([#13](https://github.com/avst-perrygeorge/npm-release-demo/issues/13)) ([3f4fb02](https://github.com/avst-perrygeorge/npm-release-demo/commit/3f4fb02672e9ee6f0ada06be617dd81eec77bdcb))
+* removed carrot on @semantic-release/changelog ([#10](https://github.com/avst-perrygeorge/npm-release-demo/issues/10)) ([a18db8f](https://github.com/avst-perrygeorge/npm-release-demo/commit/a18db8fdea298f84854c8c21916dd7733c1c8faa))
+* removed owner from input in release ([#16](https://github.com/avst-perrygeorge/npm-release-demo/issues/16)) ([2997ac2](https://github.com/avst-perrygeorge/npm-release-demo/commit/2997ac2702f9ef452a9f8ed8a3af2473210c7c69))
+* set app ID from vars ([#14](https://github.com/avst-perrygeorge/npm-release-demo/issues/14)) ([d6dfa2c](https://github.com/avst-perrygeorge/npm-release-demo/commit/d6dfa2ca52c1edb4ac848e9594f65efb52e19ec0))
+* set token at checkout step ([#17](https://github.com/avst-perrygeorge/npm-release-demo/issues/17)) ([0fc5fce](https://github.com/avst-perrygeorge/npm-release-demo/commit/0fc5fce4dfbed65c662e7be83943bccd006ef697))
+* updated generate token step ([#12](https://github.com/avst-perrygeorge/npm-release-demo/issues/12)) ([f2f8b08](https://github.com/avst-perrygeorge/npm-release-demo/commit/f2f8b0811da81f94c9a2e67c0b71128dc18cf662))
+* updated to release workflow with github app ([#11](https://github.com/avst-perrygeorge/npm-release-demo/issues/11)) ([2370a85](https://github.com/avst-perrygeorge/npm-release-demo/commit/2370a857200ddf6b1266899e67ce9146a24d1faa))
+
 # [1.1.0](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.0.9...v1.1.0) (2026-04-08)
 
 
