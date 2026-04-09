@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.5...v1.1.6) (2026-04-09)
+
+
+### Bug Fixes
+
+* update to readme ([#21](https://github.com/avst-perrygeorge/npm-release-demo/issues/21)) ([9b13427](https://github.com/avst-perrygeorge/npm-release-demo/commit/9b13427769b4c7499b2d2147a85393df9ef985bc))
+
 ## [1.1.5](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.4...v1.1.5) (2026-04-09)
 
 
