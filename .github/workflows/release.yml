@@ -42,14 +42,13 @@ jobs:
       - name: Fetch OpenAPI spec
         run: |
           curl -L --fail \
-            -H "Accept: application/vnd.github.raw+json" \
-            -H "Authorization: Bearer ${{ secrets.SDK_REPO_PAT }}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/avst-perrygeorge/npm-release-demo-app/contents/openapi.yaml \
+            https://salable.app/openapi.yaml \
             -o openapi.yaml
 
       - name: List OpenAPI spec
-        run: ls -la openapi.yaml
+        run: |
+          ls -la openapi.yaml
+          cat openapi.yaml
 
       - name: Generate SDK with Kiota
         run: |
