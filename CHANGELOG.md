@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.3...v1.1.4) (2026-04-09)
+
+
+### Bug Fixes
+
+* move openapi to salable url ([#20](https://github.com/avst-perrygeorge/npm-release-demo/issues/20)) ([5e5a333](https://github.com/avst-perrygeorge/npm-release-demo/commit/5e5a33308169abfca9d5d2e0ada182abfd198e50))
+
 ## [1.1.3](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.2...v1.1.3) (2026-04-09)
 
 
