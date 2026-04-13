@@ -39,17 +39,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch OpenAPI spec
-        run: |
-          curl -L --fail \
-            https://salable.app/openapi.yaml \
-            -o openapi.yaml
-
-      - name: List OpenAPI spec
-        run: |
-          ls -la openapi.yaml
-          cat openapi.yaml
-
       - name: Generate SDK with Kiota
         run: npm run generate:sdk
 
