@@ -51,9 +51,10 @@ jobs:
           cat openapi.yaml
 
       - name: Generate SDK with Kiota
-        run: |
-          echo "Generating SDK with Kiota from openapi.yaml"
-          echo "Would run: npx kiota generate -l typescript -d openapi.yaml -o packages/sdk"
+        run: npm run generate:sdk
+
+      - name: List SDK
+        run: ls src/sdk
 
       - name: Commit for semantic release
         if: github.event_name == 'workflow_dispatch'
