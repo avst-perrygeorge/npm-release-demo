@@ -1,3 +1,11 @@
+## [1.1.8](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.7...v1.1.8) (2026-04-13)
+
+
+### Bug Fixes
+
+* reverted back to app ID ([#24](https://github.com/avst-perrygeorge/npm-release-demo/issues/24)) ([09882c6](https://github.com/avst-perrygeorge/npm-release-demo/commit/09882c663cd2fbcef639f7925f88f9b0c5b62204))
+* use client ID ([#23](https://github.com/avst-perrygeorge/npm-release-demo/issues/23)) ([8ef89d4](https://github.com/avst-perrygeorge/npm-release-demo/commit/8ef89d40808b92d864b6b5b854a84cb0dd1cdd8b))
+
 ## [1.1.7](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.6...v1.1.7) (2026-04-13)
 
 
