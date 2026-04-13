@@ -1,6 +1,6 @@
 {
   "name": "@avst-perry/test-sdk",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "scripts": {
     "generate:sdk": "kiota generate --openapi ./openapi.yaml -o ./src/sdk --language typescript --class-name Salable --clean-output"
   },

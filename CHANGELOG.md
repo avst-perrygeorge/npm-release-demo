@@ -1,3 +1,11 @@
+## [1.1.10](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.9...v1.1.10) (2026-04-13)
+
+
+### Bug Fixes
+
+* added microsoft/setup-kiota@v0.5.0 ([230eb2c](https://github.com/avst-perrygeorge/npm-release-demo/commit/230eb2c713dd569173a80a3b28e32158a4539a69))
+* updated lock ([417d88d](https://github.com/avst-perrygeorge/npm-release-demo/commit/417d88d8eae243fc913f974c4db3af90b6650eca))
+
 ## [1.1.9](https://github.com/avst-perrygeorge/npm-release-demo/compare/v1.1.8...v1.1.9) (2026-04-13)
 
 
